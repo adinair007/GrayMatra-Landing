@@ -7,5 +7,6 @@ html {
 }
 
 body {
-  @apply bg-white dark:bg-gray-500;
+  background-color: white !important; /* Fallback */
+  @apply bg-white dark:bg-gray-900 !important;
 }

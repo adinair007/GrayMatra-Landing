@@ -1,16 +1,19 @@
-import { Typewriter } from 'react-simple-typewriter';
-import { WebsiteCreation } from '../../assets';
+import { Typewriter } from "react-simple-typewriter";
+import { WebsiteCreation } from "../../assets";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen bg-white dark:bg-gray-500 text-gray-900 dark:text-white flex items-center pt-20">
+    <section
+      id="home"
+      className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white flex items-center pt-20"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 space-y-6 text-center md:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold">
-            Empowering Your Digital Presence with{' '}
+            Empowering Your Digital Presence with{" "}
             <span className="text-saffron">
               <Typewriter
-                words={['Gray Mātrā', 'Innovation', 'Excellence']}
+                words={["Gray Mātrā", "Innovation", "Excellence"]}
                 loop={0}
                 cursor
                 cursorStyle="|"
@@ -21,7 +24,8 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-base sm:text-lg">
-            We craft innovative, responsive, and user-centric websites to elevate your brand.
+            We craft innovative, responsive, and user-centric websites to
+            elevate your brand.
           </p>
           <a
             href="#contact"

@@ -3,21 +3,24 @@ import { Navbar, Hero, Services, About, Contact, Footer } from "./components";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    return localStorage.getItem("theme") === "dark";
+    const savedTheme = localStorage.getItem("theme");
+    // console.log("Initial theme from localStorage:", savedTheme); // Debug
+    return savedTheme === "dark" ? true : false;
   });
 
   useEffect(() => {
+    // console.log("isDarkMode changed:", isDarkMode); // Debug
+    document.documentElement.classList.remove("dark");
     if (isDarkMode) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
     } else {
-      document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
   }, [isDarkMode]);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white dark:bg-gray-900">
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Hero />
       <Services />
