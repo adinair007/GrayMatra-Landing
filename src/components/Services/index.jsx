@@ -1,37 +1,37 @@
 import {
   CodingInterface,
   ResponsiveDesign,
-  SEOOptimization,
+  NativeApps,
   TechSupport,
 } from "../../assets";
 
 const Services = () => {
   const services = [
     {
-      title: "Custom Website Development",
+      title: "Native Application Development",
       description:
-        "Tailored websites built with modern technologies to meet your unique needs.",
+        "High-performance native mobile apps for iOS and Android, tailored to your business needs.",
+      image: NativeApps,
+      alt: "Native App Development",
+    },
+    {
+      title: "Software Development",
+      description:
+        "Custom software solutions to optimize workflows and enhance business scalability.",
       image: CodingInterface,
-      alt: "Coding Interface",
+      alt: "Software Development",
     },
     {
-      title: "Responsive Design",
+      title: "Website Development",
       description:
-        "Seamless user experiences across all devices, from mobile to desktop.",
+        "Responsive, user-centric websites designed to engage and convert your audience.",
       image: ResponsiveDesign,
-      alt: "Responsive Mockups",
-    },
-    {
-      title: "SEO Optimization",
-      description:
-        "Boost your visibility with search engine-optimized websites.",
-      image: SEOOptimization,
-      alt: "SEO Analytics",
+      alt: "Website Development",
     },
     {
       title: "Maintenance & Support",
       description:
-        "Ongoing support to keep your website secure and up-to-date.",
+        "Ongoing support to ensure your apps, software, and websites remain secure and up-to-date.",
       image: TechSupport,
       alt: "Support Team",
     },

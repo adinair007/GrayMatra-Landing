@@ -19,10 +19,10 @@ const About = () => {
             About <span className="text-saffron">Gray Mātrā</span>
           </h2>
           <p className="text-base sm:text-lg">
-            Gray Mātrā is dedicated to transforming your digital vision into
-            reality. With a passion for innovation and expertise in web
-            development, we deliver solutions that drive results. Our team
-            combines creativity and technology to build websites that stand out.
+            Gray Mātrā transforms your digital vision with expertise in native
+            mobile applications, custom software solutions, and responsive
+            websites. Our passionate team delivers innovative, high-performance
+            technology to drive your business forward.
           </p>
         </div>
       </div>

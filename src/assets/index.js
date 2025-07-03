@@ -5,13 +5,15 @@ import ResponsiveDesign from "./ResponsiveDesign.jpg";
 import SEOOptimization from "./SEOOptimization.jpg";
 import TechSupport from "./TechSupport.jpg";
 import WebsiteCreation from "./WebsiteCreation.jpg";
+import NativeApps from "./NativeApps.jpg";
 
 export {
-    CodingInterface,
-    Collaboration,
-    GMLogo,
-    ResponsiveDesign,
-    SEOOptimization,
-    TechSupport,
-    WebsiteCreation,
-}
+  CodingInterface,
+  Collaboration,
+  GMLogo,
+  ResponsiveDesign,
+  SEOOptimization,
+  TechSupport,
+  WebsiteCreation,
+  NativeApps,
+};

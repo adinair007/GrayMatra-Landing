@@ -24,8 +24,8 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-base sm:text-lg">
-            We craft innovative, responsive, and user-centric websites to
-            elevate your brand.
+            We craft cutting-edge native applications, robust software
+            solutions, and responsive websites to elevate your digital presence.
           </p>
           <a
             href="#contact"
