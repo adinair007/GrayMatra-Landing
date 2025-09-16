@@ -5,7 +5,7 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const mailtoLink = `mailto:contact-us@graymatra.com?subject=Contact%20from%20GrayMatra%20Website&body=Name:%20${encodeURIComponent(
+  const mailtoLink = `mailto:contactus@graymatra.com?subject=Contact%20from%20GrayMatra%20Website&body=Name:%20${encodeURIComponent(
     name
   )}%0AEmail:%20${encodeURIComponent(email)}%0AMessage:%20${encodeURIComponent(
     message
