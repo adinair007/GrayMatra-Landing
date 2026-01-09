@@ -4,6 +4,7 @@ import {
   NativeApps,
   TechSupport,
 } from "../../assets";
+import Vortex from "../Vortex"
 
 const Services = () => {
   const services = [
@@ -40,9 +41,12 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="py-16 bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+      className="py-16 bg-white dark:bg-black text-gray-900 dark:text-white relative overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      {/* Vortex Background */}
+      <Vortex className="absolute inset-0 opacity-50" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-10">
           Our <span className="text-saffron">Services</span>
         </h2>

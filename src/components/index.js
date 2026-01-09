@@ -4,6 +4,7 @@ import Services from "./Services";
 import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Vortex from "./Vortex";
 
 export {
   Navbar,
@@ -12,4 +13,5 @@ export {
   About,
   Contact,
   Footer,
+  Vortex,
 };

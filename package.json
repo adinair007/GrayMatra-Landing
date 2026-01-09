@@ -1,5 +1,6 @@
 {
   "homepage": "https://adinair007.github.io/GrayMatra-Landing/",
+  "type": "module",
   "scripts": {
     "build": "vite build",
     "dev": "vite",
@@ -8,10 +9,19 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.4.2",
+    "@react-three/postprocessing": "^3.0.4",
+    "@whatisjery/react-fluid-distortion": "^1.6.1",
+    "framer-motion": "^11.11.9",
+    "postprocessing": "^6.38.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-scroll": "^1.9.3",
-    "react-simple-typewriter": "^5.0.1"
+    "react-scroll-parallax": "^3.4.5",
+    "react-simple-typewriter": "^5.0.1",
+    "react-wavify": "^1.11.1",
+    "three": "^0.182.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.4.1",

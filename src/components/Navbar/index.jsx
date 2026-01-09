@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 import { GMLogo } from "../../assets";
 
 const Navbar = ({ isDarkMode, setIsDarkMode }) => {
@@ -7,6 +8,10 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
+  };
+
+  const linkVariants = {
+    hover: { scale: 1.05, transition: { duration: 0.3 } },
   };
 
   return (
@@ -20,50 +25,58 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           />
         </div>
         <div className="hidden md:flex space-x-6 items-center">
-          <Link
-            to="home"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-80}
-            className="hover:text-white hover:bg-saffron hover:scale-105 hover:shadow-md px-2 py-1 rounded transition-all duration-300 cursor-pointer"
-            activeClass="text-saffron scale-105"
-          >
-            Home
-          </Link>
-          <Link
-            to="services"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-80}
-            className="hover:text-white hover:bg-saffron hover:scale-105 hover:shadow-md px-2 py-1 rounded transition-all duration-300 cursor-pointer"
-            activeClass="text-saffron scale-105"
-          >
-            Services
-          </Link>
-          <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-80}
-            className="hover:text-white hover:bg-saffron hover:scale-105 hover:shadow-md px-2 py-1 rounded transition-all duration-300 cursor-pointer"
-            activeClass="text-saffron scale-105"
-          >
-            About
-          </Link>
-          <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-80}
-            className="hover:text-white hover:bg-saffron hover:scale-105 hover:shadow-md px-2 py-1 rounded transition-all duration-300 cursor-pointer"
-            activeClass="text-saffron scale-105"
-          >
-            Contact
-          </Link>
+          <motion.div whileHover="hover" variants={linkVariants}>
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="hover:text-white hover:bg-saffron hover:shadow-md px-2 py-1 rounded transition-all duration-300 cursor-pointer"
+              activeClass="text-saffron"
+            >
+              Home
+            </Link>
+          </motion.div>
+          <motion.div whileHover="hover" variants={linkVariants}>
+            <Link
+              to="services"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="hover:text-white hover:bg-saffron hover:shadow-md px-2 py-1 rounded transition-all duration-300 cursor-pointer"
+              activeClass="text-saffron"
+            >
+              Services
+            </Link>
+          </motion.div>
+          <motion.div whileHover="hover" variants={linkVariants}>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="hover:text-white hover:bg-saffron hover:shadow-md px-2 py-1 rounded transition-all duration-300 cursor-pointer"
+              activeClass="text-saffron"
+            >
+              About
+            </Link>
+          </motion.div>
+          <motion.div whileHover="hover" variants={linkVariants}>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="hover:text-white hover:bg-saffron hover:shadow-md px-2 py-1 rounded transition-all duration-300 cursor-pointer"
+              activeClass="text-saffron"
+            >
+              Contact
+            </Link>
+          </motion.div>
           <button
             onClick={toggleDarkMode}
             className="p-2 rounded-full hover:bg-saffron hover:text-white transition"
@@ -128,54 +141,62 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       </div>
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white dark:bg-gray-900 py-4 px-6 flex flex-col space-y-4">
-          <Link
-            to="home"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-80}
-            className="shadow-sm hover:text-white hover:bg-saffron hover:scale-105 hover:shadow-md px-2 py-1 rounded transition-all duration-300 cursor-pointer"
-            activeClass="text-saffron scale-105"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Home
-          </Link>
-          <Link
-            to="services"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-80}
-            className="shadow-sm hover:text-white hover:bg-saffron hover:scale-105 hover:shadow-md px-2 py-1 rounded transition-all duration-300 cursor-pointer"
-            activeClass="text-saffron scale-105"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Services
-          </Link>
-          <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-80}
-            className="shadow-sm hover:text-white hover:bg-saffron hover:scale-105 hover:shadow-md px-2 py-1 rounded transition-all duration-300 cursor-pointer"
-            activeClass="text-saffron scale-105"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            About
-          </Link>
-          <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-80}
-            className="shadow-sm hover:text-white hover:bg-saffron hover:scale-105 hover:shadow-md px-2 py-1 rounded transition-all duration-300 cursor-pointer"
-            activeClass="text-saffron scale-105"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Contact
-          </Link>
+          <motion.div whileHover="hover" variants={linkVariants}>
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="shadow-sm hover:text-white hover:bg-saffron hover:shadow-md px-2 py-1 rounded transition-all duration-300 cursor-pointer"
+              activeClass="text-saffron"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Home
+            </Link>
+          </motion.div>
+          <motion.div whileHover="hover" variants={linkVariants}>
+            <Link
+              to="services"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="shadow-sm hover:text-white hover:bg-saffron hover:shadow-md px-2 py-1 rounded transition-all duration-300 cursor-pointer"
+              activeClass="text-saffron"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Services
+            </Link>
+          </motion.div>
+          <motion.div whileHover="hover" variants={linkVariants}>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="shadow-sm hover:text-white hover:bg-saffron hover:shadow-md px-2 py-1 rounded transition-all duration-300 cursor-pointer"
+              activeClass="text-saffron"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              About
+            </Link>
+          </motion.div>
+          <motion.div whileHover="hover" variants={linkVariants}>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="shadow-sm hover:text-white hover:bg-saffron hover:shadow-md px-2 py-1 rounded transition-all duration-300 cursor-pointer"
+              activeClass="text-saffron"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Contact
+            </Link>
+          </motion.div>
           <div className="flex items-center space-x-3">
             <svg
               className={`w-5 h-5 ${
